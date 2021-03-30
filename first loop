@@ -1,0 +1,15 @@
+def loop (x=11):
+    i = 0
+    s = 0
+    while i < x :
+        print (x)
+        s+= i
+        i += 1
+    
+    return s
+
+loop ()
+
+print ("loop time/t/t" , timeit.timeit (loop, number = 1))
+
+#this is ment to count to 10 and then post how long it took i have no idea why you cant use return i and get rid of s all together
